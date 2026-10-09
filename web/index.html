@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <title></title>
+    <link rel="stylesheet" href="/web/webgame.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header>
+        <p id="eyebrow" class="eyebrow"></p><h1 id="site-title"></h1><p id="tagline" class="tagline"></p>
+      </header>
+      <section class="game-frame" aria-label="Game">
+        <canvas id="game" aria-label="Game canvas"></canvas>
+        <div class="game-actions" aria-label="Game actions"><button id="help-button" class="icon-button" aria-label="Show controls">?</button><button id="pause-button" class="icon-button" aria-label="Pause game">Ⅱ</button></div>
+        <div id="start-screen" class="overlay"><h2 id="start-title"></h2><p id="start-message"></p><article id="start-guide" class="guide-card"></article><button id="start-button"></button></div>
+        <div id="guide-screen" class="overlay hidden" role="dialog" aria-modal="true"><h2 id="guide-title"></h2><article id="full-guide" class="guide-card"></article><button id="close-guide-button"></button></div>
+        <div id="pause-screen" class="overlay hidden" role="dialog" aria-modal="true"><h2 id="pause-title"></h2><p id="pause-message"></p><button id="resume-button"></button></div>
+        <div id="end-screen" class="overlay hidden"><h2 id="end-title"></h2><p id="end-message"></p><button id="restart-button"></button></div>
+      </section>
+      <section id="controls-summary" class="controls" aria-label="Game controls"></section>
+      <footer class="legal-notice"><p id="legal-copyright"></p><p id="legal-assets"></p></footer>
+    </main>
+    <script src="/web/web-config.js"></script><script src="/web/webgame.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+:root { color-scheme: dark; font-family: "Trebuchet MS", system-ui, sans-serif; background: #0c1722; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: radial-gradient(circle at top, #29445a, #0c1722 58%); color: #edf6e9; }
+.shell { width: min(100%, 950px); padding: 24px; text-align: center; }
+header { margin-bottom: 18px; }
+.eyebrow { color: #e7c869; letter-spacing: .18em; font-size: .72rem; margin: 0; }
+h1 { font-size: clamp(2.3rem, 8vw, 5.5rem); line-height: .9; letter-spacing: .08em; margin: 8px 0; text-shadow: 4px 4px #18262b; }
+.tagline { color: #aac4c1; margin: 0; }
+.game-frame { position: relative; width: 100%; border: 4px solid #e7c869; box-shadow: 0 20px 55px #000a; overflow: hidden; background: #90c978; }
+canvas { display: block; width: 100%; height: auto; image-rendering: pixelated; }
+.overlay { position: absolute; inset: 0; display: grid; align-content: center; justify-items: center; gap: 12px; background: #071018c9; padding: 24px; transition: opacity .25s ease; }
+.overlay.hidden { opacity: 0; pointer-events: none; }
+.overlay h2 { color: #ffe58c; font-size: clamp(1.5rem, 5vw, 2.7rem); margin: 0; text-shadow: 3px 3px #1d2727; }
+.overlay p { margin: 0 0 10px; }
+button { border: 0; padding: 14px 22px; cursor: pointer; background: #e7c869; color: #132019; font: inherit; font-weight: 800; letter-spacing: .08em; box-shadow: 4px 4px #5d3f1a; }
+button:hover, button:focus-visible { background: #fff0a8; outline: 3px solid #fff; }
+.game-actions { position: absolute; right: 12px; top: 12px; z-index: 2; display: flex; gap: 8px; }
+.icon-button { width: 38px; height: 38px; padding: 0; border: 2px solid #f8dfa0; border-radius: 50%; background: #102329de; color: #fff; box-shadow: none; font-size: 1.25rem; line-height: 1; }
+.guide-card { width: min(390px, 92%); padding: 12px 16px; border: 1px solid #e7c869; background: #14262ddd; color: #e8f1e6; text-align: left; }
+.guide-card h3 { margin: 0 0 8px; color: #ffe58c; text-align: center; letter-spacing: .1em; }
+.guide-card p { margin: 8px 0; }
+.guide-tip { color: #b9d4cd; font-size: .9rem; }
+.controls { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px 25px; padding: 18px; color: #c4d6d0; }
+kbd { display: inline-block; min-width: 24px; padding: 3px 6px; margin-right: 3px; border: 1px solid #80928c; border-bottom-width: 3px; border-radius: 3px; background: #182b30; color: white; font-size: .8em; }
+.legal-notice { max-width: 800px; margin: 0 auto; color: #8fa5a0; font-size: .72rem; line-height: 1.45; }
+.legal-notice p { margin: 5px 0; }
+@media (max-width: 600px) { .shell { padding: 10px; } .controls { gap: 9px 15px; font-size: .85rem; } }
