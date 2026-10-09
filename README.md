@@ -1,6 +1,6 @@
 # Quantum Squad Shooter
 > (Completed)
-Play the game at: 
+Play the game at: quantumsquad.ishitabhatt.tech
 
 Quantum Squad Shooter is a 2D side-scrolling action game available as both a
 Pygame desktop application and an HTML5 Canvas browser game.
@@ -44,13 +44,6 @@ python -m http.server 4173
 ```
 
 Open [http://localhost:4173/web/](http://localhost:4173/web/).
-
-## Deploy to Vercel
-
-Import the repository as an **Other** static project. Set the Vercel **Root
-Directory** to the repository root (not `web/`), and leave both the build
-command and output directory empty. Push this updated `vercel.json`, then use
-**Redeploy** so Vercel serves the CSS, JavaScript, and shared assets correctly.
 
 ## Configuration
 
